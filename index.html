@@ -5,28 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HangManGame</title>
+    <!-- Google Fonts -->
     <!-- add reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- add bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- My own css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <!-- viewport  -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 </head>
 
 <body>
     <!-- Headder. Can be JPG-->
+    <div id="header"></div>
     <!-- Main Container -->
-    <!-- One just one row centered with 4 col split into 2 divs (side by side) -->
-    <!-- Live <h1> that updates with each correct solution -->
-    <!-- Left div id="result"  contains an image that updates with each correct solution-->
-    <!-- Right div id="inputs" -->
-    <!-- Text: "Press any key to get started" -->
-    <!-- Text: "Wins" updates as game goes on -->
-    <!-- Text: "Current word" - Displays dashes, holds solution value -->
-    <!--Text: "Number of guesses remaining" - starts at 10 and decrements by 1 with each guess  -->
-    <!--Text:  "Letters already Guessed" - displays all previous guesses  -->
+    <div class="container">
+        <h1>Hang Man</h1>
+        <!-- just one row centered with 8 col split into 2 divs (side by side) -->
+        <div id="game" class="row">
+            <!-- Live <h1> that updates with each correct solution -->
+
+            <!-- Left div id="result"  contains an image that updates with each correct solution-->
+            <div id="results" class="col-md-4">
+                <h2>Solution</h2>
+                <div id="photoPlaceHolder"></div>
+                <div id="currentWord">
+                    <!-- <h3>Current Word: </h3> -->
+                    <!-- target this div with js  -->
+                    <!-- Text: "Current word" - Displays dashes, reveals letters as correctly guessed, holds solution value -->
+                </div>
+            </div>
+            <!-- Middle div id="info" -->
+            <div id="info" class="col-md-4">
+                <!-- Text: "Press any key to get started" -->
+                <h3>Press any key to get started!</h3>
+                <br>
+                <br>
+                <hr>
+            </div>
+            <!-- Right div id="inputs" -->
+            <div id="inputs" class="col-md-4">
+                <h2>Game Stats</h2>
+                <!-- Text: "Wins" updates as game goes on -->
+                <ul id="stats">
+                    <li id="wins">Wins: </li>
+                    <!-- Text: "Losses" updates as game goes on -->
+                    <li id="losses">Losses: </li>
+                    <!--Text: "Number of guesses remaining" - starts at 10 and decrements by 1 with each guess  -->
+                    <li id="guessNumber">Guesses: </li>
+                    <!--Text:  "Letters already Guessed" - displays all previous guesses  -->
+                    <li id="usedLetters">Already Guessed: </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- Sticky footer -->
 
-
+    <!-- My JS -->
+    <script src="assets\javascript\game.js"></script>
 </body>
 
 </html>

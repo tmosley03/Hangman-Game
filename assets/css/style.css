@@ -1,0 +1,57 @@
+/* body {} */
+
+#game {
+    background-color: lightsalmon;
+    border: solid 2px black;
+    /* align-content: center; */
+}
+
+#results {
+    background-color: lightgray;
+    display: inline-block;
+    border: solid 1px black;
+    height: 250px;
+}
+
+#results h2 {
+    text-align: center;
+}
+
+#info {
+    background-color: lightgreen;
+    height: 250px;
+    border: solid 1px black;
+}
+
+#info h3 {
+    text-align: center;
+}
+
+#inputs {
+    background-color: lightblue;
+    /* display: inline-block; */
+    border: solid 1px black;
+    float: right;
+    height: 250px;
+}
+
+#inputs h2 {
+    text-align: center;
+}
+
+#photoPlaceHolder {
+    background-color: orange;
+    border: solid 2px white;
+    height: 125px;
+    width: 125px;
+    margin-top: 15px;
+}
+
+.letter-btn {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    text-align: center;
+    margin: 2px;
+    border-radius: 4px;
+}
