@@ -1,5 +1,9 @@
 /* body {} */
 
+h1 {
+    text-align: center;
+}
+
 #game {
     background-color: lightsalmon;
     border: solid 2px black;
@@ -17,10 +21,18 @@
     text-align: center;
 }
 
+#currentWord {
+    background-color: white;
+    /* height: 15px;
+    width: 45px; */
+}
+
 #info {
     background-color: lightgreen;
     height: 250px;
     border: solid 1px black;
+    text-align: center;
+    padding-top: 15px;
 }
 
 #info h3 {
