@@ -48,7 +48,7 @@ var imgBank = [
 //     console.log(imgBank[i]);
 // }
 // start the game when button is clicked
-$("button").on("click", function () {
+$("#startButton").on("click", function () {
     //pick random word
     randWord = function () {
         wordBank[Math.floor(Math.random() * wordBank.length)]
